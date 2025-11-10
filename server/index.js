@@ -20,3 +20,7 @@ app.listen(PORT, ()=> {
 
 app.use('/api/user', userRoute)
 app.use("/api/residency", residencyRoute)
+
+app.get('/', (req, res) => {
+  res.send('API is running 🚀');
+});
